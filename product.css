@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 10px;
+    margin-top: 0px;
+    margin-right: 10px;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+}
+h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: cursive, Courier, monospace;
+    background-color: #ff65ff49;
+    padding: 50px;
+    margin-top: -15px;
+
+    
+}
+.filters {
+      
+    width: 98.3%;
+    margin-top: -21px;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 40px;
+    background-color: rgb(65, 65, 65);
+    color: white;
+    border-radius: 2px;
+   
+}
+
+.filter-button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#product-container {
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+    gap:20px;
+    
+ }
+ .product {
+    border-radius: 10px;
+    width: 100%; /* Set the width of each container to 100% of the grid cell */
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+    background-color: white;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    transition: transform 0.3s ease-in-out;
+}
+.product:hover {
+    transform: scale(1.05);
+}
+.product img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+.order-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.order-button:hover {
+    background-color: #00ad09;
+}

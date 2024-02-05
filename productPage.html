@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="product.css">
+    <title>Product Catalog</title>
+</head>
+<body>
+  <div>
+    <h1>Products Page</h1>
+  </div>
+    <div class="filters">
+        <button class="filter-button" onclick="filterProducts('ALL')">ALL</button>
+        <button class="filter-button" onclick="filterProducts('mosquito-net')">Mosquito Net</button>
+        <button class="filter-button" onclick="filterProducts('wallpapers')">Wallpapers</button>
+        <button class="filter-button" onclick="filterProducts('screens')">Screens</button>
+    </div>
+
+    <div id="product-container"></div>
+
+    <script src="product.js"></script>
+</body>
+</html>
