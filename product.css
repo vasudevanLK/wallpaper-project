@@ -17,6 +17,36 @@ h1{
 
     
 }
+
+
+/* Add this CSS for quantity input */
+label[for="quantity"],
+input[type="number"] {
+    width: 45px;
+    display: inline-block;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+/* Add this CSS for delivery time dropdown */
+label[for="deliveryTime"],
+select[name="deliveryTime"] {
+    display: inline-block;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+/* Add this CSS to align both quantity and delivery time horizontally */
+.order-button,
+label,
+input,
+select {
+    vertical-align: middle;
+}
+
+/* Adjust styles as needed */
+
+
 .filters {
       
     width: 98.3%;
