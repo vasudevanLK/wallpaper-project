@@ -6,6 +6,137 @@ body {
     padding: 10px;
     background-color: rgb(255, 255, 255);
 }
+.place-order-button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #4CAF50;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  .place-order-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #45a049;
+    z-index: -1;
+    transition: transform 0.3s ease-in-out;
+    transform-origin: 100% 50%;
+    transform: scaleX(0);
+  }
+  
+  .place-order-button:hover::before {
+    transform-origin: 0% 50%;
+    transform: scaleX(1);
+  }
+  
+  @keyframes shine {
+    0% {
+      transform: translateX(-150%);
+    }
+    50% {
+      transform: translateX(150%);
+    }
+    100% {
+      transform: translateX(-150%);
+    }
+  }
+  
+  .place-order-button::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0));
+    animation: shine 1.5s infinite;
+  }
+  .attractive-text {
+    margin-top: 5rem;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: #333;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: auto;
+  }
+
+  .container {
+    text-align: center;
+  }
+
+  .button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #fff;
+    text-decoration: none;
+    background: linear-gradient(45deg, #3498db, #6F1E51);
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+  }
+
+  .button:before,
+  .button:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #16a085, #2ecc71);
+    border-radius: 5px;
+    z-index: -1;
+    transition: transform 0.5s ease-out;
+  }
+
+  .button:after {
+    background: linear-gradient(45deg, #e74c3c, #f39c12);
+    transform: scaleX(0);
+    transform-origin: 100% 50%;
+  }
+
+  .button:hover:before {
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+  }
+
+  .button:hover:after {
+    transform: scaleX(1);
+    transform-origin: 0 50%;
+  }
+
+  .button span {
+    position: relative;
+    z-index: 2;
+  }
+
+  .button:hover {
+    color: #fff;
+  }
+
+
 h1{
     display: flex;
     align-items: center;
@@ -17,7 +148,13 @@ h1{
 
     
 }
+.body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
+    margin-top: 10rem;
+  }
 
 /* Add this CSS for quantity input */
 label[for="quantity"],
@@ -71,17 +208,19 @@ select {
     cursor: pointer;
 }
 #product-container {
-    display: flex;
-    flex-direction: row;
-    padding: 30px;
-    gap:20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns with equal width */
+    grid-gap: 5rem;
+    margin-right:5rem;
+    margin-left: 3rem;
     
  }
  .product {
+
     border-radius: 10px;
     width: 100%; /* Set the width of each container to 100% of the grid cell */
     border: 1px solid #ddd;
-    padding: 20px;
+    padding: 15px;
     text-align: center;
     background-color: white;
     box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;

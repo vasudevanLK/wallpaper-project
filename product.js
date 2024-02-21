@@ -1,8 +1,11 @@
 const products = [
-    { category: 'ALL', img: 'all-product.jpg', price: '$50', material: 'Cotton', size: 'Queen' },
-    { category: 'mosquito-net', img: 'mosquito-net.jpg', price: '$30', material: 'Polyester', size: 'Single' },
-    { category: 'wallpapers', img: 'wallpapers.jpg', price: '$20', material: 'Paper', size: 'Standard' },
-    { category: 'screens', img: 'screens.jpg', price: '$40', material: 'Metal', size: 'Large' },
+    { category: 'Wallpaper Customized', img: "images (1).jpeg", price: '$50', material: 'Paper', size: 'Custom' },
+    { category: 'mosquito-net', img: 'mosqnt.jpeg', price: '$30', material: 'Polyester', size: 'Single' },
+    { category: 'mosquito-net', img: 'netmosq.jpeg', price: '$30', material: 'Polyester', size: 'Double' },
+    { category: 'mosquito-net', img: 'netmosq.jpeg', price: '$30', material: 'Polyester', size: 'Medium' },
+    { category: 'mosquito-net', img: 'queensize.avif', price: '$30', material: 'Polyester', size: 'Queen' },
+    { category: 'Window Screen', img: 'screen.jpg', price: '$20', material: 'Paper', size: 'Standard' },
+    { category: 'Blinds', img: 'screens.jpeg', price: '$40', material: 'Metal', size: 'Large' },
 ];
 
 function filterProducts(category) {
